@@ -9,6 +9,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 
 public class Wait {
+    public Wait(WebDriver driver) {
+        this.driver = driver;
+    }
+
     WebDriver driver;
     public WebDriverWait wait;
     Duration TIMEOUT = Duration.ofSeconds(10);
@@ -18,18 +22,18 @@ public class Wait {
         return wait;
     }
 
-    public void forVisibility(WebElement element){
+    public void forVisibility(WebElement element) {
         try {
             setWait().until(ExpectedConditions.visibilityOf(element));
-        } catch (TimeoutException e){
+        } catch (TimeoutException e) {
             e.printStackTrace();
         }
     }
 
-    public void forInvisibility(WebElement element){
+    public void forInvisibility(WebElement element) {
         try {
             setWait().until(ExpectedConditions.invisibilityOf(element));
-        } catch (TimeoutException e){
+        } catch (TimeoutException e) {
             e.printStackTrace();
         }
     }

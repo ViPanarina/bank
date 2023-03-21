@@ -1,7 +1,6 @@
 package tests;
 
 import com.google.common.io.Files;
-
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -14,10 +13,10 @@ import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.concurrent.TimeUnit;
 
 public class ApplicationManager {
     public WebDriver driver;
+
     public WebDriver remoteDriverSelenoid() throws MalformedURLException {
         FirefoxOptions options = new FirefoxOptions();
         options.setCapability("browserName", "firefox");
@@ -40,7 +39,6 @@ public class ApplicationManager {
 
         driver.get("https://www.globalsqa.com/angularJs-protractor/BankingProject/");
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
     }
 
 

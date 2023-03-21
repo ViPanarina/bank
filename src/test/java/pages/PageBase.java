@@ -4,32 +4,31 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
-import  wait.Wait;
+import wait.Wait;
+
 public class PageBase {
     public WebDriver driver;
     Wait wait;
 
-    public PageBase(WebDriver driver){
-        this.driver=driver;
-        PageFactory.initElements(driver,this);
+    public PageBase(WebDriver driver) {
+        this.driver = driver;
+        PageFactory.initElements(driver, this);
     }
 
-    public void selectOption(String optionName, WebElement selectElement){
+    public void selectOption(String optionName, WebElement selectElement) {
         Select select = new Select(selectElement);
         select.selectByVisibleText(optionName);
     }
 
-    public void fillField(WebElement field, String text){
+    public void fillField(WebElement field, String text) {
         click(field);
         field.clear();
         field.sendKeys(text);
     }
 
-    public void click(WebElement element){
-        wait.forVisibility(element);
+    public void click(WebElement element) {
         element.click();
     }
-
 
 
 }
