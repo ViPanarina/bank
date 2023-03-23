@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00ef0d44-432c-45a5-86c0-5a944ef26b11" name="Changes" comment="Created new classes by PageObject">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/customerLogin/account/AccountPage.java" afterDir="false" />
+    <list default="true" id="00ef0d44-432c-45a5-86c0-5a944ef26b11" name="Changes" comment="Created new page AccountPage.java, finished CustomerLoginTest.java, described loginExistingUser,pages for that test.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/PageBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/PageBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/customerLogin/CustomerLoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/customerLogin/CustomerLoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/ApplicationManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/login/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/login/CustomerLoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/wait/Wait.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/wait/Wait.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,13 +104,21 @@
       <option name="project" value="LOCAL" />
       <updated>1679257525225</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Created new page AccountPage.java, finished CustomerLoginTest.java, described loginExistingUser,pages for that test.">
+      <created>1679398827146</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1679398827147</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created the new project - Bank" />
     <MESSAGE value="Created new classes by PageObject" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created new classes by PageObject" />
+    <MESSAGE value="Created new page AccountPage.java, finished CustomerLoginTest.java, described loginExistingUser,pages for that test." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created new page AccountPage.java, finished CustomerLoginTest.java, described loginExistingUser,pages for that test." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
