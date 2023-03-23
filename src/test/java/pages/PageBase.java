@@ -30,5 +30,11 @@ public class PageBase {
         element.click();
     }
 
+    public String getAlertText() {
+        return driver.switchTo().alert().getText();
+    }
 
+    public void clickAlertOkButton() {
+        driver.switchTo().alert().accept();
+    }
 }
