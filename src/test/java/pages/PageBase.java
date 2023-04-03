@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 import wait.Wait;
 
 import java.awt.*;
@@ -34,6 +35,11 @@ public class PageBase {
         click(field);
         field.clear();
         field.sendKeys(text);
+    }
+
+    public void checkItemText(WebElement element, String expectedText, String err) {
+        String actualText = element.getText();
+        Assert.assertEquals(actualText, expectedText, err);
     }
 
     public void click(WebElement element) {

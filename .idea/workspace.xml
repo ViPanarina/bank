@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00ef0d44-432c-45a5-86c0-5a944ef26b11" name="Changes" comment="Described test RegisterNewCustomerTest.java">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="00ef0d44-432c-45a5-86c0-5a944ef26b11" name="Changes" comment="Described method takeAndCompareScreenshot">
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/PageBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/PageBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/customerLogin/CustomerLoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/customerLogin/CustomerLoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/ApplicationManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/login/CustomerLoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/login/CustomerLoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/bankManagerLogin/addCustomer/AddCustomerPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/bankManagerLogin/addCustomer/AddCustomerPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/manager_login/RegisterNewCustomerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/manager_login/RegisterNewCustomerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +58,7 @@
     &quot;settings.editor.splitter.proportion&quot;: &quot;0.2925473&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.RegisterNewCustomerTest.registerNewCustomerOpenAccountAndCustomerLogin">
+  <component name="RunManager" selected="TestNG.RegisterNewCustomerTest.registerNewUserWithInvalidData">
     <configuration name="CustomerLoginTest.loginExistingUser" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="bank.test" />
       <extension name="coverage">
@@ -116,8 +113,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RegisterNewCustomerTest.registerNewUserWithInvalidData" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="bank.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.manager_login.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.manager_login" />
+      <option name="MAIN_CLASS_NAME" value="tests.manager_login.RegisterNewCustomerTest" />
+      <option name="METHOD_NAME" value="registerNewUserWithInvalidData" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.RegisterNewCustomerTest.registerNewUserWithInvalidData" />
         <item itemvalue="TestNG.RegisterNewCustomerTest.registerNewCustomerOpenAccountAndCustomerLogin" />
         <item itemvalue="TestNG.CustomerLoginTest.loginUserWithInvalidData" />
         <item itemvalue="TestNG.CustomerLoginTest.loginExistingUser" />
@@ -168,7 +184,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679571563765</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Described method takeAndCompareScreenshot">
+      <created>1680517410796</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1680517410796</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -177,7 +200,8 @@
     <MESSAGE value="Created new page AccountPage.java, finished CustomerLoginTest.java, described loginExistingUser,pages for that test." />
     <MESSAGE value="Described AddCustomerPage.java,OpenAccountPage.java" />
     <MESSAGE value="Described test RegisterNewCustomerTest.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Described test RegisterNewCustomerTest.java" />
+    <MESSAGE value="Described method takeAndCompareScreenshot" />
+    <option name="LAST_COMMIT_MESSAGE" value="Described method takeAndCompareScreenshot" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

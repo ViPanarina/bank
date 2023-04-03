@@ -72,4 +72,22 @@ public class RegisterNewCustomerTest extends TestBase {
         accountPage.waitForLoading();
     }
 
+    @Test
+    public void registerNewUserWithInvalidData() throws IOException {
+        homePage = new HomePage(app.driver);
+        homePage.waitForLoading();
+        homePage.takeAndCompareScreenshot("homePage", null);
+        homePage.clickOnBankManagerLoginButton();
+
+        bankManagerLoginPage = new BankManagerLoginPage(app.driver);
+        bankManagerLoginPage.waitForLoading();
+        bankManagerLoginPage.openAddCustomerTab();
+
+        addCustomerPage = new AddCustomerPage(app.driver);
+        addCustomerPage.waitForLoading();
+        addCustomerPage.fillAddCustomerForm(firstName, lastName, "");
+        addCustomerPage.clickOnAddCustomerButton();
+    }
+
+
 }
