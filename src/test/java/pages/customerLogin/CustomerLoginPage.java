@@ -37,4 +37,6 @@ public class CustomerLoginPage extends PageBase {
     public void clickOnLoginButton() {
         click(loginButton);
     }
+
+
 }

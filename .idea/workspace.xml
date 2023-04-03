@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="00ef0d44-432c-45a5-86c0-5a944ef26b11" name="Changes" comment="Described AddCustomerPage.java,OpenAccountPage.java">
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/manager_login/RegisterNewCustomerTest.java" afterDir="false" />
+    <list default="true" id="00ef0d44-432c-45a5-86c0-5a944ef26b11" name="Changes" comment="Described test RegisterNewCustomerTest.java">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/PageBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/PageBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/bankManagerLogin/BankManagerLoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/bankManagerLogin/BankManagerLoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/bankManagerLogin/openAccount/OpenAccountPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/bankManagerLogin/openAccount/OpenAccountPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/customerLogin/CustomerLoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/customerLogin/CustomerLoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/ApplicationManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/login/CustomerLoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/login/CustomerLoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/manager_login/RegisterNewCustomerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/manager_login/RegisterNewCustomerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +80,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CustomerLoginTest.loginUserWithInvalidData" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="bank.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.login.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests.login" />
+      <option name="MAIN_CLASS_NAME" value="tests.login.CustomerLoginTest" />
+      <option name="METHOD_NAME" value="loginUserWithInvalidData" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RegisterNewCustomerTest.registerNewCustomerOpenAccountAndCustomerLogin" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="bank.test" />
       <extension name="coverage">
@@ -100,6 +119,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.RegisterNewCustomerTest.registerNewCustomerOpenAccountAndCustomerLogin" />
+        <item itemvalue="TestNG.CustomerLoginTest.loginUserWithInvalidData" />
         <item itemvalue="TestNG.CustomerLoginTest.loginExistingUser" />
       </list>
     </recent_temporary>
@@ -141,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679567362385</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Described test RegisterNewCustomerTest.java">
+      <created>1679571563765</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1679571563765</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -149,7 +176,8 @@
     <MESSAGE value="Created new classes by PageObject" />
     <MESSAGE value="Created new page AccountPage.java, finished CustomerLoginTest.java, described loginExistingUser,pages for that test." />
     <MESSAGE value="Described AddCustomerPage.java,OpenAccountPage.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="Described AddCustomerPage.java,OpenAccountPage.java" />
+    <MESSAGE value="Described test RegisterNewCustomerTest.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="Described test RegisterNewCustomerTest.java" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

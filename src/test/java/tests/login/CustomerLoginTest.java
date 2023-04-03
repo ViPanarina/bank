@@ -1,5 +1,6 @@
 package tests.login;
 
+import com.github.javafaker.Faker;
 import org.testng.annotations.Test;
 import pages.HomePage;
 import pages.customerLogin.CustomerLoginPage;
@@ -7,6 +8,7 @@ import pages.customerLogin.account.AccountPage;
 import tests.TestBase;
 
 public class CustomerLoginTest extends TestBase {
+    Faker faker;
     HomePage homePage;
     CustomerLoginPage customerLoginPage;
     AccountPage accountPage;
@@ -28,4 +30,5 @@ public class CustomerLoginTest extends TestBase {
         accountPage.waitForLoading();
     }
 
+    
 }
