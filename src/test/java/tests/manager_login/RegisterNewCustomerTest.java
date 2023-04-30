@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 import pages.HomePage;
 import pages.bankManagerLogin.BankManagerLoginPage;
 import pages.bankManagerLogin.addCustomer.AddCustomerPage;
+import pages.bankManagerLogin.customers.CustomersPage;
 import pages.bankManagerLogin.openAccount.OpenAccountPage;
 import pages.customerLogin.CustomerLoginPage;
 import pages.customerLogin.account.AccountPage;
@@ -20,10 +21,11 @@ public class RegisterNewCustomerTest extends TestBase {
     AddCustomerPage addCustomerPage;
     OpenAccountPage openAccountPage;
     AccountPage accountPage;
+    CustomersPage customersPage;
 
     Faker faker = new Faker();
-    String firstName = faker.name().firstName();
-    String lastName = faker.name().lastName();
+    String firstName = faker.internet().uuid();
+    String lastName = faker.internet().uuid();
     String firstNameAndLastName = firstName + " " + lastName;
     String postCode = faker.address().zipCode();
     String currencyValue = "Dollar";
@@ -57,9 +59,9 @@ public class RegisterNewCustomerTest extends TestBase {
         openAccountPage.clickOnProcessButton();
 
         String expectedRes = "Account created successfully with account Number :";
-        String actualRes = addCustomerPage.getAlertText();
+        String actualRes = openAccountPage.getAlertText();
         Assert.assertTrue(actualRes.contains(expectedRes));
-        addCustomerPage.clickAlertOkButton();
+        openAccountPage.clickAlertOkButton();
 
         homePage.clickOnHomeButton();
         homePage.waitForLoading();
@@ -70,10 +72,27 @@ public class RegisterNewCustomerTest extends TestBase {
         customerLoginPage.clickOnLoginButton();
         accountPage = new AccountPage(app.driver);
         accountPage.waitForLoading();
+
+        homePage.clickOnHomeButton();
+        homePage.waitForLoading();
+        homePage.clickOnBankManagerLoginButton();
+
+        bankManagerLoginPage.waitForLoading();
+        bankManagerLoginPage.openCustomersTab();
+
+        customersPage = new CustomersPage(app.driver);
+        customersPage.waitForLoading();
+        customersPage.fillSearchCustomerInput(firstName);
+        customersPage.waitForLoading();
+        customersPage.checkExistingCustomer(1);
+        customersPage.deleteTableRow(firstName);
     }
 
     @Test
     public void registerNewUserWithInvalidData() throws IOException {
+        String firstName = "Invalid first name";
+        String lastName = "Invalid last name";
+
         homePage = new HomePage(app.driver);
         homePage.waitForLoading();
         homePage.takeAndCompareScreenshot("homePage", null);
@@ -87,7 +106,23 @@ public class RegisterNewCustomerTest extends TestBase {
         addCustomerPage.waitForLoading();
         addCustomerPage.fillAddCustomerForm(firstName, lastName, "");
         addCustomerPage.clickOnAddCustomerButton();
-    }
+        addCustomerPage.takeAndCompareScreenshot("addCustomerPage", null);
 
+        bankManagerLoginPage.openAccountTab();
+
+        openAccountPage = new OpenAccountPage(app.driver);
+        openAccountPage.waitForLoading();
+        openAccountPage.checkNotExistingCustomer(firstNameAndLastName);
+
+        homePage.clickOnHomeButton();
+        homePage.waitForLoading();
+        homePage.clickOnCustomerLoginButton();
+
+        customerLoginPage = new CustomerLoginPage(app.driver);
+        customerLoginPage.waitForLoading();
+        customerLoginPage.checkNotExistingCustomer(firstNameAndLastName);
+
+
+    }
 
 }
